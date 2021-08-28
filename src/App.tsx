@@ -1,8 +1,14 @@
 import React from 'react';
+import { GlobalStyles } from './styles/GlobalStyles';
 
 function App() {
   return (
-    <h1>opa eae man</h1>
+      <>
+      <h1>eae man</h1>
+
+
+      <GlobalStyles />
+      </>
   );
 }
 
