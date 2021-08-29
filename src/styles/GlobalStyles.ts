@@ -11,6 +11,6 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
 }
 *,input, button{
-    font-size:'Vollkorn';
+    font-family:'Vollkorn' sans-serif;
 }
 `

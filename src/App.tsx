@@ -1,14 +1,13 @@
 import React from 'react';
 import { GlobalStyles } from './styles/GlobalStyles';
-
+import Page from './components/Page'
 function App() {
   return (
-      <>
-      <h1>eae man</h1>
-
-
-      <GlobalStyles />
-      </>
+    <>
+    <Page/>
+    <h1>opa celtinha CELTINHA</h1>
+    <GlobalStyles />
+    </>
   );
 }
 
