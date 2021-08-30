@@ -41,6 +41,7 @@ const ModelOverlay: React.FC<Props> = ({model, children}) => {
     const {scrollY} = useWrapperScroll()
 
     const sectionScrollProgress = useTransform(scrollY, y => (y - dimensions.offsetTop)/ dimensions.offsetHeight)
+    
 
     const opacity = useTransform(sectionScrollProgress, 
         [-0.42, -0.05, 0.05, 0.42],

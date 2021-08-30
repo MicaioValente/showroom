@@ -1,4 +1,4 @@
-import { useCallback, useContext, useEffect } from "react";
+import React, { useCallback, useContext, useEffect } from 'react';
 import ModelsContext from "../ModelsContext";
 
 export default function useModel(modelName: string) {
