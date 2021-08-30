@@ -17,6 +17,7 @@ interface Props  extends React.HTMLAttributes<HTMLDivElement>{
     overlayNode: React.ReactNode
 }
 
+
 //passo as props pra poder ter acesso as elas 
 const ModelSection: React.FC<Props>= ({
     modelName,
@@ -36,6 +37,7 @@ const ModelSection: React.FC<Props>= ({
             sectionRef
         })
     }, [])
+
 
     return(
         <Container ref={sectionRef} {...props}>{children}</Container>

@@ -2,10 +2,11 @@ import React from 'react';
 
 
 import { ModelsWrapper, ModelSection } from '../Model';
-import DefaultOverlayContent from '../DefaultOverlayContent';
+import DefaultOverlayContent from '../DefaultOverlayContent/index';
 
 
 import { Container} from './styles'
+import UniqueOverlay from '../UniqueOverlay/index';
 
 
 const Page: React.FC = () => {
@@ -15,10 +16,10 @@ const Page: React.FC = () => {
                 <div>
                     {/* isso percorre cada elemento do meu array e parra um html pra cada um no caso  */}
                     {[
-                        'Model one',
-                        'Model two',
-                        'Model Three',
-                        'Model Four',
+                        'Opalão 6 Canecos',
+                        'Kombi',
+                       'Fuscão',
+                        'Golzin Quadrado',
                     ].map(modelName => (
                         
                     <ModelSection
@@ -29,13 +30,14 @@ const Page: React.FC = () => {
                         <DefaultOverlayContent
                         //É o texto que aparece na tela como props
                         label={modelName}
-                        description="ENQUANTO UNS DIRIGEM CARROS, EU DIRIGEM DE LENDAS"
+                        description="ENQUANTO UNS DIRIGEM CARROS, ELES DIRIGEM DE LENDAS"
                         />
                     }
                     />
                     ))}
                     
                 </div>
+                <UniqueOverlay/>
             </ModelsWrapper>
         </Container>
     )

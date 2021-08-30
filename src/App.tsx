@@ -5,7 +5,6 @@ function App() {
   return (
     <>
     <Page/>
-    <h1>opa celtinha CELTINHA</h1>
     <GlobalStyles />
     </>
   );
