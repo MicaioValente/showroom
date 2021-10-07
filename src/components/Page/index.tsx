@@ -10,6 +10,11 @@ import UniqueOverlay from '../UniqueOverlay/index';
 
 
 const Page: React.FC = () => {
+    let descriptions = [
+        "Com o mais novo acelerador via c#, você só acelera enquanto tiver c# pra aperta",
+        "a queridinha de quem quer viver da sua arte",
+        "o carro mais brabo do brasil",
+        "sonho de todo moleque que recem tira a carteira"]
     return(
         <Container>
             <ModelsWrapper>
@@ -30,7 +35,8 @@ const Page: React.FC = () => {
                         <DefaultOverlayContent
                         //É o texto que aparece na tela como props
                         label={modelName}
-                        description="ENQUANTO UNS DIRIGEM CARROS, ELES DIRIGEM DE LENDAS"
+                        description={() => {
+                         descriptions.map()}}
                         />
                     }
                     />
