@@ -5,7 +5,7 @@ import { ModelsWrapper, ModelSection } from '../Model';
 import DefaultOverlayContent from '../DefaultOverlayContent/index';
 
 
-import { Container} from './styles'
+import { Container } from './styles'
 import UniqueOverlay from '../UniqueOverlay/index';
 
 
@@ -15,7 +15,7 @@ const Page: React.FC = () => {
         "a queridinha de quem quer viver da sua arte",
         "o carro mais brabo do brasil",
         "sonho de todo moleque que recem tira a carteira"]
-    return(
+    return (
         <Container>
             <ModelsWrapper>
                 <div>
@@ -23,27 +23,26 @@ const Page: React.FC = () => {
                     {[
                         'Opalão 6 Canecos',
                         'Kombi',
-                       'Fuscão',
+                        'Fuscão',
                         'Golzin Quadrado',
                     ].map(modelName => (
-                        
-                    <ModelSection
-                    key={modelName}
-                    className="colored"
-                    modelName={modelName}
-                    overlayNode={
-                        <DefaultOverlayContent
-                        //É o texto que aparece na tela como props
-                        label={modelName}
-                        description={() => {
-                         descriptions.map()}}
+
+                        <ModelSection
+                            key={modelName}
+                            className="colored"
+                            modelName={modelName}
+                            overlayNode={
+                                <DefaultOverlayContent
+                                    //É o texto que aparece na tela como props
+                                    label={modelName}
+                                    description="Enquanto uns dirigem carros, Eles dirigem lendas "
+                                />
+                            }
                         />
-                    }
-                    />
                     ))}
-                    
+
                 </div>
-                <UniqueOverlay/>
+                <UniqueOverlay />
             </ModelsWrapper>
         </Container>
     )
